@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ParentCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_profile" translatesAutoresizingMaskIntoConstraints="NO" id="hMH-uC-Xzt">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hMH-uC-Xzt" secondAttribute="height" multiplier="1:1" id="bq4-CA-k4W"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3e-TF-VHu">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orh-7Q-Fgc">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUi-2d-zUG">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.71173955511843834" blue="0.52844767230993117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="j3e-TF-VHu" firstAttribute="leading" secondItem="hMH-uC-Xzt" secondAttribute="trailing" constant="8" id="1LX-kh-b2K"/>
+                <constraint firstItem="j3e-TF-VHu" firstAttribute="top" secondItem="hMH-uC-Xzt" secondAttribute="top" id="2eM-ao-60U"/>
+                <constraint firstItem="hMH-uC-Xzt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="3sH-N7-t0V"/>
+                <constraint firstItem="FUi-2d-zUG" firstAttribute="leading" secondItem="j3e-TF-VHu" secondAttribute="leading" id="B18-E4-KmB"/>
+                <constraint firstItem="FUi-2d-zUG" firstAttribute="trailing" secondItem="j3e-TF-VHu" secondAttribute="trailing" id="DDz-DL-8q9"/>
+                <constraint firstItem="orh-7Q-Fgc" firstAttribute="trailing" secondItem="FUi-2d-zUG" secondAttribute="trailing" id="ELq-sO-11x"/>
+                <constraint firstItem="orh-7Q-Fgc" firstAttribute="leading" secondItem="FUi-2d-zUG" secondAttribute="leading" id="P4l-oT-OAd"/>
+                <constraint firstAttribute="bottom" secondItem="hMH-uC-Xzt" secondAttribute="bottom" constant="8" id="a6w-MS-XJ7"/>
+                <constraint firstItem="FUi-2d-zUG" firstAttribute="top" secondItem="j3e-TF-VHu" secondAttribute="bottom" constant="8" id="alw-MV-s6q"/>
+                <constraint firstItem="orh-7Q-Fgc" firstAttribute="top" secondItem="FUi-2d-zUG" secondAttribute="bottom" constant="8" id="bR8-43-ijV"/>
+                <constraint firstItem="hMH-uC-Xzt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="djy-Pt-wod"/>
+                <constraint firstAttribute="trailing" secondItem="j3e-TF-VHu" secondAttribute="trailing" constant="8" id="mkL-Rt-l5p"/>
+            </constraints>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="default_profile" width="128" height="128"/>
+    </resources>
+</document>

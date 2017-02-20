@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionReusableViewFooterIdentifier" id="U6b-Vx-4bR" customClass="CollectionReusableViewFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Footer Reusable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrQ-Eg-LTI">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YrQ-Eg-LTI" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="9zK-VT-voY"/>
+                <constraint firstItem="YrQ-Eg-LTI" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="cZn-rM-XuU"/>
+                <constraint firstAttribute="trailing" secondItem="YrQ-Eg-LTI" secondAttribute="trailing" constant="8" id="igq-i2-zBA"/>
+                <constraint firstAttribute="bottom" secondItem="YrQ-Eg-LTI" secondAttribute="bottom" constant="8" id="w9i-IH-BYK"/>
+            </constraints>
+            <connections>
+                <outlet property="footerTitle" destination="YrQ-Eg-LTI" id="G0X-PS-vkY"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
